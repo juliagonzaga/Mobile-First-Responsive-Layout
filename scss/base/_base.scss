@@ -22,6 +22,11 @@ body {
 
 a { 
     @include link-reset;
+
+    &:hover {
+        color: black;
+        text-decoration: underline overline;
+    }
 }
 
 hr {
