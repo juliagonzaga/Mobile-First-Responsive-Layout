@@ -436,6 +436,10 @@ a {
   text-decoration: none;
   color: inherit;
 }
+a:hover {
+  color: black;
+  text-decoration: underline overline;
+}
 
 hr {
   margin: 0;
