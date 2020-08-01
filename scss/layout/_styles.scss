@@ -1,0 +1,131 @@
+.portfolio-section {
+    padding: 16px 0;
+    margin: 0 -16px;
+    background-color: $color-background-secondary;
+
+    @media (min-width: $break-m) {
+        @include flexy ($wrap: wrap);
+        padding: 20px;
+        margin: 0 -28px;
+    }
+    
+    > .title {
+        @include uppercase;
+        padding-top: 24px;
+        padding-bottom: 40px;
+        margin: 0;
+
+        @media (min-width: $break-m) {
+            flex-grow: 1;
+            width: 100%;
+        }
+    }
+}
+
+.portfolio-component {
+    margin: 0 16px;
+
+    @media (min-width: $break-m) {
+        flex-grow: 1;
+        width: 50%;
+        padding: 8px;
+        margin: 0;
+    }
+
+    @media (min-width: $break-l) {
+        width: 30%;
+    }
+
+    > .heading {
+        padding-top: 16px;
+        padding-bottom: 12px;
+        margin: 0;
+    }
+
+    > .description {
+        padding: 0 16px 32px 16px;
+        margin: 0;
+        font-size: .95em;
+        line-height: 1.4em;
+
+        @media (min-width: $break-m) {
+            padding: 0 36px 40px 36px;
+            font-size: 1em;
+            line-height: 1.5em;
+        }
+    }
+}
+
+.contact-section {
+    padding-top: 52px;
+    padding-bottom: 52px;
+
+    @media (min-width: $break-m) {
+        padding: 72px;
+    }
+
+    @media (min-width: $break-l) {
+        padding-left: 160px;
+        padding-right: 160px;
+    }
+
+    > .title {
+        @include uppercase;
+        margin: 0;
+    }
+
+    > .description {
+        padding-top: 24px;
+        margin: 0;
+        font-size: 1em;
+
+        @media (min-width: $break-m) {
+            font-size: 1.3em;
+            font-weight: 400;
+            line-height: 1.4em;
+            padding: 36px 0;
+        }
+
+        @media (min-width: $break-l) {
+            padding: 28px;
+        }
+    }
+}
+
+.contact-phone {
+    @include flexy ($justify: center);
+    margin-bottom: 16px;
+    font-style: normal;
+
+    > .label {
+        margin-right: 16px;
+    }
+
+    @media (min-width: $break-m) {
+        margin-bottom: 28px;
+        font-size: 1.3em;
+    }
+
+    @media (min-width: $break-l) {
+        margin-bottom: 12px;
+        font-size: 1.2em;
+    }
+}
+
+.contact-email {
+    @include flexy ($justify: center);
+    
+    font-style: normal;
+
+    > .label {
+        margin-right: 16px;
+    }
+
+    @media (min-width: $break-m) {
+        font-size: 1.3em;
+    }
+
+    @media (min-width: $break-l) {
+        font-size: 1.2em;
+    }
+}

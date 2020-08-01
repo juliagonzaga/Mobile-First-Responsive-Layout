@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font: 1em/1.5em 'Lato', sans-serif;
+}
+
+.page-container {
+    padding: 16px;
+    text-align: center;
+    background-color: $color-background-primary;
+
+    @media (min-width: $break-m) {
+        padding: 28px;
+    }
+
+    @media (min-width: $break-l) {
+        padding: 0 52px;
+    }
+}
+
+a { 
+    @include link-reset;
+}
+
+hr {
+    margin: 0;
+}

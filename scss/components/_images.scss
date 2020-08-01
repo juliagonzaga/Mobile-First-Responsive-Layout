@@ -1,0 +1,22 @@
+.profile-img {
+    max-width: 70%;
+    padding-top: 36px;
+    margin: auto;
+
+    @media (min-width: $break-m) {
+        max-width: 38%;
+        padding-top: 0;
+        padding-left: 8px;
+    }
+
+    @media (min-width: $break-l) {
+        max-width: 50%;
+        padding-left: 48px;
+    }
+}
+
+.portfolio-component {
+    > .thumbnail {
+        max-width: 100%;
+    }
+}

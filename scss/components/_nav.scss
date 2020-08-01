@@ -1,0 +1,46 @@
+.main-nav { 
+    > li {
+        @include uppercase;
+        padding: 12px;
+        margin: 4px 0;
+        background-color: $color-background-secondary;
+
+        @media (min-width: $break-m) {
+            padding: 16px;
+            margin: 0;
+            background-color: $color-background-primary;
+        }
+    }
+
+    @media (min-width: $break-m) {
+        @include flexy ($justify: center);
+    }
+}
+
+.footer-nav {
+    @include uppercase;
+    @include link-reset;
+    font-size: .75em;
+
+    @media (min-width: $break-m) {
+        display: none;
+    }
+}
+
+.footer-main-nav {
+    display: none;
+
+    @media (min-width: $break-m) {
+        @include flexy;
+
+        > li {
+            @include uppercase;
+            padding: 0 12px;
+            font-size: .8em;
+
+            > a { 
+                @include link-reset;
+            }
+        }
+    }
+}

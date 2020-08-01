@@ -1,0 +1,43 @@
+.main-header {
+    @media (min-width: $break-m) {
+        @include flexy (flex, column, wrap, center);
+    }
+
+    @media (min-width: $break-l) {
+        @include flexy (flex, row, wrap, space-between);
+
+        padding-top: 40px;
+    }
+}
+
+.main-name {
+    margin-top: 16px;
+    margin-bottom: 28px;
+    font-size: 1.4em;
+    font-weight: $font-bold;
+
+    @media (min-width: $break-m) {
+        margin-bottom: 16px;
+    }
+}
+
+.profile-bio {
+    @media (min-width: $break-m) {
+        @include flexy ($direction: row-reverse);
+        padding-top: 36px;
+        padding-bottom: 52px;
+    }
+
+    > .description {
+        margin-bottom: 36px;
+        font-size: 1em;
+        color: grey;
+
+        @media (min-width: $break-m) {
+            margin: 0;
+            font-size: 1.3em;
+            line-height: 1.3em;
+            text-align: left;
+        }
+    }
+}

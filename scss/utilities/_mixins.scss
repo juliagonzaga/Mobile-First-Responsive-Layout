@@ -1,0 +1,23 @@
+@mixin uppercase {
+    font-size: .9em;
+    font-weight: $font-bold;
+    text-transform: uppercase;
+    @content;
+}
+
+@mixin link-reset {
+    text-decoration: none; 
+    color: inherit;
+    @content;
+}
+
+@mixin flexy (
+    $disp: flex,
+    $direction: null,
+    $wrap: null,
+    $justify: null) {
+    display: $disp;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+}
