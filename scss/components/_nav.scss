@@ -37,10 +37,6 @@
             @include uppercase;
             padding: 0 12px;
             font-size: .8em;
-
-            > a { 
-                @include link-reset;
-            }
         }
     }
 }
