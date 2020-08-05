@@ -1,7 +1,1 @@
 
-### Sass ###
-.sass-cache/
-*.css.map
-
-### Less ###
-*.css
