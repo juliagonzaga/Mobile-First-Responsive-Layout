@@ -10,7 +10,7 @@
     }
 }
 
-.main-name {
+.main-header__name {
     margin-top: 16px;
     margin-bottom: 28px;
     font-size: 1.4em;
@@ -28,7 +28,7 @@
         padding-bottom: 52px;
     }
 
-    > .description {
+    &__description {
         margin-bottom: 36px;
         font-size: 1em;
         color: grey;

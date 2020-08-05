@@ -9,7 +9,7 @@
         margin: 0 -28px;
     }
     
-    > .title {
+    &__title {
         @include uppercase;
         padding-top: 24px;
         padding-bottom: 40px;
