@@ -607,7 +607,6 @@ hr {
 .contact-section > .description {
   padding-top: 24px;
   margin: 0;
-  font-size: 1em;
 }
 @media (min-width: 768px) {
   .contact-section > .description {
